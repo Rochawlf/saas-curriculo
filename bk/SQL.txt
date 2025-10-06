@@ -1,0 +1,40 @@
+CREATE TABLE usuarios (
+    id BINARY(16) NOT NULL PRIMARY KEY,
+    nome_completo VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    senha_hash VARCHAR(255) NOT NULL,
+    data_criacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+CREATE TABLE curriculos (
+    id BINARY(16) NOT NULL PRIMARY KEY,
+    usuario_id BINARY(16) NOT NULL,
+    titulo VARCHAR(255) NOT NULL,
+    data_criacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    data_modificacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+CREATE TABLE secoes (
+    id BINARY(16) NOT NULL PRIMARY KEY,
+    curriculo_id BINARY(16) NOT NULL,
+    tipo_secao VARCHAR(50) NOT NULL,
+    ordem INT NOT NULL DEFAULT 0,
+    
+    FOREIGN KEY (curriculo_id) REFERENCES curriculos(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+CREATE TABLE itens_secao (
+    id BINARY(16) NOT NULL PRIMARY KEY,
+    secao_id BINARY(16) NOT NULL,
+    ordem INT NOT NULL DEFAULT 0,
+    dados_brutos JSON NOT NULL,
+    texto_gerado_ia TEXT,
+    
+    FOREIGN KEY (secao_id) REFERENCES secoes(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+
+
+estrutura do banco saas_curriculo_ia

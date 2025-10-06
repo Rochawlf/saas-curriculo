@@ -1,0 +1,407 @@
+/* Estilos Globais e Variáveis de Tema (sem alterações) */
+:root {
+    --background-color: #f4f7f6;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --header-bg: #ffffff;
+    --card-bg: #ffffff;
+    --button-text-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --input-border-color: #ccc;
+    --input-bg-color: #ffffff;
+    --sidebar-bg: #e9ecef;
+    --success-color: #28a745;
+}
+
+body.dark-theme {
+    --background-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --primary-color: #58a6ff;
+    --header-bg: #2d2d2d;
+    --card-bg: #2d2d2d;
+    --button-text-color: #1a1a1a;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --input-border-color: #555;
+    --input-bg-color: #333;
+    --sidebar-bg: #252525;
+}
+
+/* Estilos base (body, top-bar, auth-button, index-container, etc.) continuam os mesmos... */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+}
+
+.top-bar {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+#theme-toggle {
+    background: none;
+    border: 1px solid var(--input-border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: var(--shadow-color);
+}
+
+.auth-button {
+    padding: 8px 16px;
+    background-color: var(--card-bg);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ...outros estilos genéricos... */
+
+/* --- ESTRUTURA E ESTILOS DO DASHBOARD (ATUALIZADO) --- */
+#dashboard-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    padding: 20px;
+    border-right: 1px solid var(--input-border-color);
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+}
+
+#sidebar h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.2s;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a.active {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+}
+
+#main-content {
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content-header {
+    margin-bottom: 30px;
+}
+
+.interaction-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    margin-bottom: 20px;
+}
+
+.interaction-card h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--input-border-color);
+    padding-bottom: 10px;
+}
+
+/* --- ÁREA DE INPUT DO USUÁRIO (NOVO) --- */
+.user-input-area textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o botão de upload de arquivo */
+.file-upload-area {
+    position: relative;
+    display: inline-block;
+}
+
+#file-input {
+    display: none;
+}
+
+/* Esconde o input real */
+.file-upload-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: var(--sidebar-bg);
+    border: 1px dashed var(--input-border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.file-upload-label:hover {
+    background-color: var(--shadow-color);
+}
+
+#file-list {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.file-item {
+    background-color: var(--sidebar-bg);
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.action-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: filter 0.2s, opacity 0.2s;
+}
+
+.generate-btn {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+}
+
+.generate-btn:hover {
+    filter: brightness(1.1);
+}
+
+.generate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* --- ÁREA DE RESPOSTA DA IA (NOVO) --- */
+#ia-response-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Começa com uma coluna para mobile */
+    gap: 20px;
+    min-height: 150px;
+}
+
+/* Duas colunas para telas maiores */
+@media (min-width: 1024px) {
+    #ia-response-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.template-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Garante que os cantos arredondados funcionem */
+    display: flex;
+    flex-direction: column;
+}
+
+.template-header {
+    padding: 10px 15px;
+    background-color: var(--sidebar-bg);
+    font-weight: bold;
+}
+
+.template-content {
+    padding: 15px;
+    white-space: pre-wrap;
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.template-actions {
+    padding: 10px 15px;
+    border-top: 1px solid var(--input-border-color);
+    text-align: right;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.template-actions button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.copy-btn {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.copy-btn.copied {
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+.use-btn {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Loader/Spinner */
+.loader {
+    margin: 40px auto;
+    border: 5px solid var(--sidebar-bg);
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Botão de Regenerar */
+#regenerate-btn {
+    display: none;
+    /* Começa escondido */
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#regenerate-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+}
+
+
+/* Estilos específicos para a nova preview dos PDFs */
+#ia-response-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pdf-preview-card {
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    padding: 1rem;
+}
+
+.pdf-preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px var(--shadow-color);
+}
+
+.pdf-preview-card .thumbnail {
+    width: 100%;
+    height: 250px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #adb5bd;
+}
+
+.pdf-preview-card h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.pdf-preview-card a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: filter 0.2s;
+}
+
+.pdf-preview-card a:hover {
+    filter: brightness(1.1);
+}

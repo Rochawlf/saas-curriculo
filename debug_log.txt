@@ -1,0 +1,780 @@
+[2025-10-06 15:11:35]
+--- NOVA REQUISIÇÃO INICIADA ---
+
+[2025-10-06 15:11:35]
+Array
+(
+    [DADOS RECEBIDOS (POST)] => Array
+        (
+            [userInput] => Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+
+            [section] => pessoal
+        )
+
+    [FICHEIROS RECEBIDOS (FILES)] => Array
+        (
+        )
+
+)
+
+
+[2025-10-06 15:11:35]
+Array
+(
+    [PAYLOAD A SER ENVIADO PARA A API (parts)] => Array
+        (
+            [0] => Array
+                (
+                    [text] => Aja como um especialista em RH e recrutamento de elite.
+Sua tarefa é analisar TODAS as informações fornecidas: o texto do usuário E o conteúdo dos ficheiros anexados.
+**Use o conteúdo extraído dos ficheiros (imagens ou PDFs) como a fonte PRIMÁRIA de informação.**
+Use o texto do usuário apenas como um complemento.
+Com base nesta análise combinada, gere 5 modelos de texto profissionais e distintos para a seção 'pessoal' de um currículo.
+
+Texto digitado pelo usuário (contexto secundário):
+"Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+"
+
+REGRAS OBRIGATÓRIAS:
+1. Sua resposta FINAL deve ser APENAS um objeto JSON válido, contendo uma chave 'modelos', que é um array de 5 objetos.
+2. Cada objeto no array deve ter as chaves 'title' (título do modelo) e 'content' (o texto gerado).
+3. Não inclua NENHUMA formatação como ```json antes ou depois do JSON. A resposta deve ser o JSON puro.
+                )
+
+        )
+
+)
+
+
+[2025-10-06 15:11:35]
+Array
+(
+    [CURL_HTTP_CODE] => 0
+    [CURL_ERROR] => URL rejected: Bad IPv6 address
+    [RESPOSTA BRUTA DA API] => 
+)
+
+
+[2025-10-06 15:14:03]
+--- NOVA REQUISIÇÃO INICIADA ---
+
+[2025-10-06 15:14:03]
+Array
+(
+    [DADOS RECEBIDOS (POST)] => Array
+        (
+            [userInput] => Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+
+            [section] => pessoal
+        )
+
+    [FICHEIROS RECEBIDOS (FILES)] => Array
+        (
+        )
+
+)
+
+
+[2025-10-06 15:14:03]
+Array
+(
+    [PAYLOAD A SER ENVIADO PARA A API (parts)] => Array
+        (
+            [0] => Array
+                (
+                    [text] => Aja como um especialista em RH e recrutamento de elite.
+Sua tarefa é analisar TODAS as informações fornecidas: o texto do usuário E o conteúdo dos ficheiros anexados.
+**Use o conteúdo extraído dos ficheiros (imagens ou PDFs) como a fonte PRIMÁRIA de informação.**
+Use o texto do usuário apenas como um complemento.
+Com base nesta análise combinada, gere 5 modelos de texto profissionais e distintos para a seção 'pessoal' de um currículo.
+
+Texto digitado pelo usuário (contexto secundário):
+"Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+"
+
+REGRAS OBRIGATÓRIAS:
+1. Sua resposta FINAL deve ser APENAS um objeto JSON válido, contendo uma chave 'modelos', que é um array de 5 objetos.
+2. Cada objeto no array deve ter as chaves 'title' (título do modelo) e 'content' (o texto gerado).
+3. Não inclua NENHUMA formatação como ```json antes ou depois do JSON. A resposta deve ser o JSON puro.
+                )
+
+        )
+
+)
+
+
+[2025-10-06 15:14:25]
+Array
+(
+    [CURL_HTTP_CODE] => 200
+    [CURL_ERROR] => 
+    [RESPOSTA BRUTA DA API] => {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"modelos\": [\n    {\n      \"title\": \"Modelo Orientado a Resultados\",\n      \"content\": \"Desenvolvedor Web Jr. com experiência prática na criação e manutenção de sistemas web utilizando PHP, JavaScript e MySQL. Contribuí ativamente no desenvolvimento de funcionalidades, integração com APIs REST e otimização de bases de dados na TechCode Solutions. Possuo background em automação de processos com Python e busco aplicar minhas habilidades para entregar soluções de software eficientes e inovadoras que gerem valor para o negócio.\"\n    },\n    {\n      \"title\": \"Modelo Focado em Stack Tecnológico\",\n      \"content\": \"Profissional de tecnologia com sólida base em Ciência da Computação e proficiência no desenvolvimento com PHP (Laravel), JavaScript (React, Node.js) e Python. Experiência consolidada em todo o ciclo de vida de desenvolvimento, incluindo controle de versão com Git, criação de APIs REST e gerenciamento de bancos de dados MySQL e PostgreSQL. Busco uma oportunidade para aprofundar meus conhecimentos e contribuir em projetos que utilizem tecnologias de ponta.\"\n    },\n    {\n      \"title\": \"Modelo Focado em Soft Skills\",\n      \"content\": \"Profissional dedicado e comunicativo, com habilidade para colaborar efetivamente em equipes multidisciplinares e traduzir requisitos de negócio em soluções técnicas funcionais. Minha experiência em desenvolvimento web e suporte técnico me proporcionou uma forte capacidade de resolução de problemas e adaptabilidade. Busco um ambiente de trabalho dinâmico onde eu possa aplicar minha criatividade e proatividade para superar desafios e impulsionar a inovação.\"\n    },\n    {\n      \"title\": \"Modelo Conciso e Direto\",\n      \"content\": \"Desenvolvedor de Software com 2+ anos de experiência combinada em estágio e posição júnior. Especializado no desenvolvimento de aplicações web com PHP, JavaScript e Python, e familiarizado com frameworks como Laravel e React. Procuro uma posição desafiadora na área de tecnologia para aplicar e expandir minhas competências em desenvolvimento de software e inovação digital.\"\n    },\n    {\n      \"title\": \"Modelo Orientado a Projetos e Paixão\",\n      \"content\": \"Desenvolvedor de Software apaixonado por criar soluções digitais, com experiência profissional em PHP e JavaScript, complementada por projetos pessoais em Node.js e desenvolvimento full-stack. Comprometido com o aprendizado contínuo, como demonstram minhas certificações recentes e a busca constante por novas tecnologias. Almejo uma posição onde possa transformar ideias criativas em produtos de software robustos e de alto impacto.\"\n    }\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 841,
+    "candidatesTokenCount": 563,
+    "totalTokenCount": 2841,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 841
+      }
+    ],
+    "thoughtsTokenCount": 1437
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "H8HjaPK8Feacz7IPmZivqQo"
+}
+
+)
+
+
+[2025-10-06 15:16:17]
+--- NOVA REQUISIÇÃO INICIADA ---
+
+[2025-10-06 15:16:17]
+Array
+(
+    [DADOS RECEBIDOS (POST)] => Array
+        (
+            [userInput] => Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+
+
+            [section] => pessoal
+        )
+
+    [FICHEIROS RECEBIDOS (FILES)] => Array
+        (
+        )
+
+)
+
+
+[2025-10-06 15:16:17]
+Array
+(
+    [PAYLOAD A ENVIAR PARA A API (parts)] => Array
+        (
+            [0] => Array
+                (
+                    [text] => Aja como um especialista em RH e recrutamento de elite. Sua tarefa é analisar TODAS as informações fornecidas: o texto do usuário E o conteúdo dos ficheiros anexados. Use o conteúdo extraído dos ficheiros (imagens ou PDFs) como a fonte PRIMÁRIA de informação. Use o texto do usuário apenas como um complemento. Com base nesta análise combinada, gere 5 modelos de texto profissionais e distintos para a seção 'pessoal' de um currículo. REGRAS OBRIGATÓRIAS: 1. Sua resposta FINAL deve ser APENAS um objeto JSON válido, contendo uma chave 'modelos', que é um array de 5 objetos. 2. Cada objeto no array deve ter as chaves 'title' (título do modelo) e 'content' (o texto gerado). 3. Não inclua NENHUMA formatação como ```json antes ou depois do JSON. A resposta deve ser o JSON puro.
+                )
+
+        )
+
+)
+
+
+[2025-10-06 15:16:17]
+Array
+(
+    [CURL_HTTP_CODE] => 0
+    [CURL_ERROR] => URL rejected: Bad IPv6 address
+    [RESPOSTA BRUTA DA API] => 
+)
+
+
+[2025-10-06 15:17:12]
+--- NOVA REQUISIÇÃO INICIADA ---
+
+[2025-10-06 15:17:12]
+Array
+(
+    [DADOS RECEBIDOS (POST)] => Array
+        (
+            [userInput] => Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+
+            [section] => pessoal
+        )
+
+    [FICHEIROS RECEBIDOS (FILES)] => Array
+        (
+        )
+
+)
+
+
+[2025-10-06 15:17:12]
+Array
+(
+    [PAYLOAD A ENVIAR PARA A API (parts)] => Array
+        (
+            [0] => Array
+                (
+                    [text] => Aja como um especialista em RH e recrutamento de elite. Sua tarefa é analisar TODAS as informações fornecidas: o texto do usuário E o conteúdo dos ficheiros anexados. Use o conteúdo extraído dos ficheiros (imagens ou PDFs) como a fonte PRIMÁRIA de informação. Use o texto do usuário apenas como um complemento. Com base nesta análise combinada, gere 5 modelos de texto profissionais e distintos para a seção 'pessoal' de um currículo. REGRAS OBRIGATÓRIAS: 1. Sua resposta FINAL deve ser APENAS um objeto JSON válido, contendo uma chave 'modelos', que é um array de 5 objetos. 2. Cada objeto no array deve ter as chaves 'title' (título do modelo) e 'content' (o texto gerado). 3. Não inclua NENHUMA formatação como ```json antes ou depois do JSON. A resposta deve ser o JSON puro.
+                )
+
+        )
+
+)
+
+
+[2025-10-06 15:17:12]
+Array
+(
+    [CURL_HTTP_CODE] => 0
+    [CURL_ERROR] => URL rejected: Bad IPv6 address
+    [RESPOSTA BRUTA DA API] => 
+)
+
+
+[2025-10-06 15:17:31]
+--- NOVA REQUISIÇÃO INICIADA ---
+
+[2025-10-06 15:17:31]
+Array
+(
+    [DADOS RECEBIDOS (POST)] => Array
+        (
+            [userInput] => Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+
+            [section] => pessoal
+        )
+
+    [FICHEIROS RECEBIDOS (FILES)] => Array
+        (
+        )
+
+)
+
+
+[2025-10-06 15:17:31]
+Array
+(
+    [PAYLOAD A ENVIAR PARA A API (parts)] => Array
+        (
+            [0] => Array
+                (
+                    [text] => Aja como um especialista em RH e recrutamento de elite. Sua tarefa é analisar TODAS as informações fornecidas: o texto do usuário E o conteúdo dos ficheiros anexados. Use o conteúdo extraído dos ficheiros (imagens ou PDFs) como a fonte PRIMÁRIA de informação. Use o texto do usuário apenas como um complemento. Com base nesta análise combinada, gere 5 modelos de texto profissionais e distintos para a seção 'pessoal' de um currículo. REGRAS OBRIGATÓRIAS: 1. Sua resposta FINAL deve ser APENAS um objeto JSON válido, contendo uma chave 'modelos', que é um array de 5 objetos. 2. Cada objeto no array deve ter as chaves 'title' (título do modelo) e 'content' (o texto gerado). 3. Não inclua NENHUMA formatação como ```json antes ou depois do JSON. A resposta deve ser o JSON puro.
+                )
+
+        )
+
+)
+
+
+[2025-10-06 15:18:00]
+Array
+(
+    [CURL_HTTP_CODE] => 200
+    [CURL_ERROR] => 
+    [RESPOSTA BRUTA DA API] => {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"modelos\": [\n    {\n      \"title\": \"Modelo Profissional Sênior (Foco em Experiência e Impacto)\",\n      \"content\": \"Profissional de [Sua Área] com mais de [X] anos de experiência consolidada em [Mencionar 2-3 áreas chave, ex: gestão de projetos, desenvolvimento de negócios, engenharia de software]. Histórico comprovado na liderança de equipes de alta performance e na entrega de projetos que resultaram em [Mencionar um resultado quantificável, ex: aumento de 20% na eficiência operacional]. Busco aplicar minha expertise estratégica para impulsionar o crescimento e a inovação em uma organização desafiadora.\"\n    },\n    {\n      \"title\": \"Modelo Orientado a Objetivos (Ideal para Transição de Carreira)\",\n      \"content\": \"Profissional dinâmico com sólida experiência em [Sua Área Anterior] e competências transferíveis em [Mencionar 2-3 competências, ex: análise de dados, comunicação interpessoal, gestão de stakeholders]. Atualmente, busco direcionar minha carreira para a área de [Sua Nova Área de Interesse], onde posso aplicar minha capacidade de resolução de problemas e meu rápido aprendizado para agregar valor e alcançar novos objetivos profissionais.\"\n    },\n    {\n      \"title\": \"Modelo Baseado em Competências (Destaque para Habilidades Técnicas)\",\n      \"content\": \"Especialista em [Sua Principal Competência] com proficiência avançada em [Ferramenta 1], [Tecnologia 2] e [Metodologia 3]. Minha carreira é marcada pela capacidade de [Descrever como aplica as competências, ex: otimizar processos complexos ou desenvolver soluções escaláveis]. Procuro uma oportunidade para utilizar meu conjunto de habilidades técnicas para resolver desafios complexos e contribuir para projetos inovadores.\"\n    },\n    {\n      \"title\": \"Modelo Híbrido (Equilíbrio entre Experiência e Habilidades)\",\n      \"content\": \"Profissional de [Sua Área] com [X] anos de experiência, combinando uma forte base em [Área de Experiência 1] com habilidades especializadas em [Habilidade 1] e [Habilidade 2]. Focado em resultados, sou capaz de traduzir objetivos de negócio em estratégias eficazes, utilizando minha expertise para [Mencionar uma realização]. Busco um ambiente colaborativo onde possa continuar a crescer e a gerar impacto.\"\n    },\n    {\n      \"title\": \"Modelo para Início de Carreira (Foco em Potencial e Motivação)\",\n      \"content\": \"Recém-graduado(a) em [Seu Curso] com grande interesse e motivação para iniciar minha carreira em [Área de Interesse]. Durante minha formação, desenvolvi habilidades em [Habilidade 1] e [Habilidade 2] através de [Mencionar projetos acadêmicos, estágios ou atividades]. Sou um profissional proativo, com excelente capacidade de aprendizado e forte desejo de contribuir para os objetivos de uma equipe dinâmica.\"\n    }\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 201,
+    "candidatesTokenCount": 677,
+    "totalTokenCount": 3057,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 201
+      }
+    ],
+    "thoughtsTokenCount": 2179
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "9sHjaLTLEMqhz7IPl_2iyAo"
+}
+
+)
+
+
+[2025-10-06 15:55:13]
+--- NOVA REQUISIÇÃO INICIADA ---
+
+[2025-10-06 15:55:13]
+Array
+(
+    [DADOS RECEBIDOS (POST)] => Array
+        (
+            [userInput] => Crie um currículo profissional no formato moderno e bem organizado, usando as seguintes informações genéricas:
+
+**Dados Pessoais**
+- Nome: João da Silva Santos
+- Idade: 28 anos
+- E-mail: joaosilva@email.com
+- Telefone: (11) 99999-9999
+- Endereço: Rua das Flores, 123 - São Paulo/SP
+- LinkedIn: linkedin.com/in/joaosilva
+- GitHub: github.com/joaosilva
+
+**Objetivo Profissional**
+Busco uma oportunidade na área de tecnologia, com foco em desenvolvimento de software e inovação digital.
+
+**Resumo Profissional**
+Profissional dedicado e comunicativo, com experiência em desenvolvimento web e boas práticas de programação. Facilidade para trabalhar em equipe e buscar soluções criativas para desafios técnicos.
+
+**Formação Acadêmica**
+- Bacharelado em Ciência da Computação — Universidade Federal de São Paulo (2018 - 2022)
+
+**Experiência Profissional**
+- **Desenvolvedor Web Jr.** — TechCode Solutions (2023 - Atual)
+  - Desenvolvimento de sistemas web com PHP e JavaScript
+  - Integração com APIs REST
+  - Manutenção de banco de dados MySQL
+  - Uso de versionamento com Git e GitHub
+
+- **Estagiário de TI** — Digital Labs (2021 - 2022)
+  - Suporte técnico a usuários internos
+  - Automação de relatórios em Python
+  - Participação em projetos de melhoria de performance de sistemas internos
+
+**Habilidades Técnicas**
+- Linguagens: PHP, JavaScript, Python, HTML, CSS
+- Frameworks: Laravel, React, Node.js
+- Banco de Dados: MySQL, PostgreSQL
+- Ferramentas: Git, VSCode, Docker
+- Inglês: Intermediário
+
+**Certificações**
+- Certificação em Desenvolvimento Web — Alura (2023)
+- Curso de Lógica de Programação — Udemy (2022)
+
+**Projetos Relevantes**
+- Sistema de Gerenciamento de Tarefas (PHP + MySQL)
+- Portfólio Pessoal (HTML, CSS e JavaScript)
+- API de Controle de Estoque (Node.js + Express)
+
+**Informações Adicionais**
+- Disponibilidade para trabalho remoto ou presencial
+- Facilidade de adaptação a novas tecnologias
+
+        )
+
+    [FICHEIROS RECEBIDOS (FILES)] => Array
+        (
+        )
+
+)
+
+
+[2025-10-06 15:55:13]
+Array
+(
+    [PAYLOAD A ENVIAR PARA A API (parts)] => Array
+        (
+            [0] => Array
+                (
+                    [text] => Aja como um especialista em RH e recrutamento de elite. Sua tarefa é analisar TODAS as informações fornecidas: o texto do usuário E o conteúdo dos ficheiros anexados. Use o conteúdo extraído dos ficheiros (imagens ou PDFs) como a fonte PRIMÁRIA de informação. Use o texto do usuário apenas como um complemento. Com base nesta análise combinada, gere 5 modelos de texto profissionais e distintos para a seção 'desconhecida' de um currículo. REGRAS OBRIGATÓRIAS: 1. Sua resposta FINAL deve ser APENAS um objeto JSON válido, contendo uma chave 'modelos', que é um array de 5 objetos. 2. Cada objeto no array deve ter as chaves 'title' (título do modelo) e 'content' (o texto gerado). 3. Não inclua NENHUMA formatação como ```json antes ou depois do JSON. A resposta deve ser o JSON puro.
+                )
+
+        )
+
+)
+
+
+[2025-10-06 15:55:39]
+Array
+(
+    [CURL_HTTP_CODE] => 200
+    [CURL_ERROR] => 
+    [RESPOSTA BRUTA DA API] => {
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"modelos\": [\n    {\n      \"title\": \"Modelo 1: Focado em Resultados e Métricas\",\n      \"content\": \"Profissional com [Número] anos de experiência em [Sua Área/Indústria], com um histórico comprovado de superação de metas e otimização de processos. Responsável por [Conquista Chave 1], que resultou num aumento de [Percentagem/Valor]% em [Métrica]. Especializado em [Competência 1] e [Competência 2], com o objetivo de alavancar a minha experiência para impulsionar o crescimento e a eficiência em ambientes desafiadores.\"\n    },\n    {\n      \"title\": \"Modelo 2: Focado em Competências e Tecnologias\",\n      \"content\": \"Especialista em [Sua Profissão] com profundo conhecimento em [Tecnologia/Software 1], [Tecnologia/Software 2] e [Metodologia 3]. A minha carreira foi desenvolvida em projetos de [Tipo de Projeto], onde apliquei as minhas competências técnicas para desenvolver soluções inovadoras e robustas. Busco uma oportunidade para contribuir com a minha expertise técnica e capacidade de resolução de problemas complexos.\"\n    },\n    {\n      \"title\": \"Modelo 3: Focado na Evolução de Carreira e Objetivos\",\n      \"content\": \"Com [Número] anos de experiência progressiva em [Sua Área], busco evoluir para uma posição de [Cargo Desejado] onde possa aplicar a minha paixão por [Interesse Específico na Área]. A minha trajetória inclui passagens por [Tipo de Empresa ou Projeto], capacitando-me com uma visão estratégica em [Competência 1] e [Competência 2]. Almejo contribuir para uma equipa inovadora, alinhada com os meus objetivos de desenvolvimento profissional.\"\n    },\n    {\n      \"title\": \"Modelo 4: Focado em Liderança e Gestão\",\n      \"content\": \"Gestor experiente com mais de [Número] anos à frente de equipas de alta performance no setor de [Sua Indústria]. Especializado em estratégia, planeamento e execução de projetos de grande escala, com um orçamento de até [Valor]. Liderei a reestruturação que [Conquista de Liderança], demonstrando fortes competências em tomada de decisão e desenvolvimento de talentos. Procuro desafios de liderança onde possa impulsionar a visão estratégica da empresa.\"\n    },\n    {\n      \"title\": \"Modelo 5: Híbrido e Conciso\",\n      \"content\": \"Profissional dinâmico e orientado para resultados, com [Número] anos de experiência em [Sua Área]. Possuo um conjunto de competências diversificado que abrange [Competência Chave 1], [Competência Chave 2] e [Competência Chave 3]. Contribuí significativamente em projetos que resultaram em [Resultado Positivo Concreto]. Busco aplicar as minhas habilidades e dedicação para agregar valor a uma empresa em crescimento.\"\n    }\n  ]\n}"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 203,
+    "candidatesTokenCount": 669,
+    "totalTokenCount": 2524,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 203
+      }
+    ],
+    "thoughtsTokenCount": 1652
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "ycrjaLncA4ygz7IPkfje0Qo"
+}
+
+)
+
+

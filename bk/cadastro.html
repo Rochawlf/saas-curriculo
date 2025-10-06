@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua Conta - SaaS Currículo IA</title>
+    <style>
+        /* Estilos consistentes com a página inicial */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px R15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .form-container h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .login-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Estilo para as mensagens de feedback */
+        #form-message {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 4px;
+            display: none; /* Escondido por padrão */
+        }
+        
+        #form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        #form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Crie sua Conta Gratuitamente</h2>
+        
+        <form id="form-cadastro">
+            
+            <div class="form-group">
+                <label for="nome_completo">Nome Completo</label>
+                <input type="text" id="nome_completo" name="nome_completo" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres" required minlength="6">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmar_senha">Confirme sua Senha</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Repita a senha" required minlength="6">
+            </div>
+            
+            <button type="submit" class="submit-btn">Criar Conta</button>
+
+            <div id="form-message"></div>
+        </form>
+
+        <div class="login-link">
+            Já tem uma conta? <a href="/index.php">Faça login</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formCadastro = document.getElementById('form-cadastro');
+            const messageEl = document.getElementById('form-message');
+            const senhaInput = document.getElementById('senha');
+            const confirmarSenhaInput = document.getElementById('confirmar_senha');
+
+            formCadastro.addEventListener('submit', async (event) => {
+                // 1. Impede o comportamento padrão do formulário (que é recarregar a página)
+                event.preventDefault();
+
+                // 2. Validação extra no lado do cliente: verificar se as senhas coincidem
+                if (senhaInput.value !== confirmarSenhaInput.value) {
+                    messageEl.textContent = 'As senhas não coincidem.';
+                    messageEl.className = 'error';
+                    messageEl.style.display = 'block';
+                    return; // Para a execução
+                }
+
+                // 3. Cria um objeto FormData com os dados do formulário
+                // Este formato é perfeito para ser lido pelo PHP em `$_POST`
+                const formData = new FormData(formCadastro);
+                
+                // Exibe uma mensagem de "carregando"
+                messageEl.textContent = 'Criando sua conta...';
+                messageEl.className = '';
+                messageEl.style.display = 'block';
+
+                try {
+                    // 4. Envia os dados para o endpoint da API usando fetch
+                    const response = await fetch('api/register.php', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    // 5. Converte a resposta do servidor (que é JSON) para um objeto
+                    const result = await response.json();
+
+                    // 6. Exibe a mensagem de feedback com base na resposta
+                    if (result.success) {
+                        messageEl.textContent = result.message;
+                        messageEl.className = 'success';
+                        formCadastro.reset(); // Limpa o formulário
+                        
+                        // Redireciona para a página principal (login) após 2 segundos
+                        setTimeout(() => {
+                            window.location.href = '/SaasCurriculo/index.php';
+                        }, 2000);
+
+                    } else {
+                        messageEl.textContent = result.message;
+                        messageEl.className = 'error';
+                    }
+
+                } catch (error) {
+                    console.error('Ocorreu um erro na requisição:', error);
+                    messageEl.textContent = 'Não foi possível se conectar ao servidor. Tente novamente.';
+                    messageEl.className = 'error';
+                } finally {
+                    messageEl.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
